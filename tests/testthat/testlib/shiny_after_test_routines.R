@@ -7,7 +7,7 @@ library(purrr)
 pick_up_test_outputs <- function(cdir, edir){
   target <- Sys.getenv("SHINYTEST_PULL")
   if (nchar(target) > 0) {
-    if (file.exists(target)) {
+    if (file.exists(target) & identical(Sys.getenv("NOT_CRAN"), "true")) {
       if(file.exists(cdir)){
         target_test <- file.path(target, "tests", "testthat" ,get_after_root_in_testthat(edir))
         dir.create(target_test, showWarnings = FALSE, recursive = TRUE)

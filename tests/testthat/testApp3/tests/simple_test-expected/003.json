@@ -1,0 +1,45 @@
+{
+  "input": {
+    "done": 0,
+    "test2": 17
+  },
+  "output": {
+    "plot": {
+      "src": "[image data sha1: 3ac3db9db6f595dd268ee9e4f0b441b12012fb75]",
+      "width": 962,
+      "height": 400,
+      "coordmap": {
+        "panels": [
+          {
+            "domain": {
+              "left": 0.36,
+              "right": 17.64,
+              "bottom": -2.36709911475011,
+              "top": 1.7476800297104
+            },
+            "range": {
+              "left": 59.0400061372148,
+              "right": 931.759996856548,
+              "bottom": 325.559981639995,
+              "top": 58.0400147600037
+            },
+            "log": {
+              "x": null,
+              "y": null
+            },
+            "mapping": {
+
+            }
+          }
+        ],
+        "dims": {
+          "width": 962,
+          "height": 400
+        }
+      }
+    }
+  },
+  "export": {
+
+  }
+}
