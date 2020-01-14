@@ -13,6 +13,9 @@ pick_up_test_outputs <- function(cdir, edir){
         dir.create(target_test, showWarnings = FALSE, recursive = TRUE)
         fhere <- list.files(cdir, full.names = TRUE)
         file.copy(fhere, target_test, overwrite = TRUE)
+        # intentional file injection for warning / notification that the test-results has been copied
+        warn_file <- file.path(target, "WARNFILE")
+        writeLines(paste0("Test pulled at ", Sys.time()), warn_file)
       }
     }
   }
