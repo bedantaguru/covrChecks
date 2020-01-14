@@ -4,9 +4,9 @@ app <- ShinyDriver$new("../")
 app$snapshotInit("simple_test")
 
 app$snapshot()
-app$setInputs(n = 80)
+app$setInputs(test2 = 800)
 app$snapshot()
-app$setInputs(n = 7)
+app$setInputs(test2 = 17)
 app$snapshot()
 
 

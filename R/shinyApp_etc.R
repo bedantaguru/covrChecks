@@ -1,4 +1,10 @@
 
+utils::globalVariables(
+  c("abort", "actionButton", "dialogViewer", "fluidPage", "numericInput",
+    "observeEvent", "paneViewer", "plotOutput", "renderPlot",
+    "runApp", "runGadget", "shinyApp", "stopApp")
+)
+
 runGadget_this <- function(app, viewer = paneViewer()){
   if (isTRUE(getOption("shiny.testmode"))) {
     identity(app)
@@ -83,7 +89,7 @@ shiny_dyn_server <- function(tag = "n"){
       n0 <- input[[tag]]
       if(!is.null(n0)){
         set.seed(1)
-        plot(rnorm(n0))
+        graphics::plot(stats::rnorm(n0))
       }
     } )
 
