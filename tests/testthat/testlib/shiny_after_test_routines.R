@@ -62,6 +62,11 @@ shiny_after_test_routines <- function(app){
     # for non-windows systems digits to be truncated
     process_jsons(expected_dir, 2)
     process_jsons(current_dir, 2)
+  }else{
+    # for Github LR formatting "LF will be replaced by CRLF"
+    # ref https://github.com/rstudio/shinytest/issues/270
+    process_jsons(expected_dir, 10)
+    process_jsons(current_dir, 10)
   }
 
   # graceful stop
