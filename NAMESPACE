@@ -2,4 +2,6 @@
 
 export("%>%")
 export(myShinyApp)
+export(myShinyApp2)
+export(myShinyApp3)
 importFrom(magrittr,"%>%")
